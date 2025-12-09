@@ -426,6 +426,29 @@ body {
     background: var(--bg-dark);
 }
 
+.innovation-intro {
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    text-align: center;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+}
+
+.innovation-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--text-light);
+    margin-bottom: 1rem;
+}
+
+.innovation-description {
+    color: var(--text-gray);
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
 .platform-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -439,6 +462,33 @@ body {
     padding: 2.5rem;
     transition: all 0.3s ease;
     position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.platform-card-link {
+    cursor: pointer;
+}
+
+.platform-card-link:hover {
+    transform: translateY(-8px);
+    border-color: var(--accent-cyan);
+    box-shadow: 0 15px 50px rgba(0, 217, 255, 0.3);
+}
+
+.platform-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--accent-cyan);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.platform-link:hover {
+    color: var(--text-light);
+    transform: translateX(5px);
 }
 
 .platform-card:hover {

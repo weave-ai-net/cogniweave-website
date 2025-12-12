@@ -320,6 +320,20 @@ body {
     position: relative;
 }
 
+/* Who We Are Section */
+.who-we-are-section {
+    background: var(--bg-dark);
+    text-align: center;
+}
+
+.who-we-are-text {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    color: var(--text-gray);
+    line-height: 1.9;
+}
+
 .section-header {
     text-align: center;
     margin-bottom: 4rem;
@@ -447,6 +461,29 @@ body {
     color: var(--text-gray);
     line-height: 1.8;
     font-size: 1.05rem;
+    margin-bottom: 1.5rem;
+}
+
+.innovation-tags {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+
+.innovation-link {
+    display: inline-block;
+    color: var(--accent-cyan);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.innovation-link:hover {
+    color: var(--text-light);
+    transform: translateX(5px);
 }
 
 .platform-grid {

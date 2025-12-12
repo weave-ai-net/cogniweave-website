@@ -1,10 +1,28 @@
-/* WeaveFactor.core Page Specific Styles */
+/* weavefactor.core Page Specific Styles */
+
+/* Content Centering */
+.content-center {
+    text-align: center;
+}
+
+.content-center .section-title {
+    margin-bottom: 2rem;
+}
+
+.section-intro {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    font-size: 1.2rem;
+    color: var(--text-gray);
+    line-height: 1.8;
+}
 
 /* Product Hero */
 .product-hero {
     padding: 120px 0 60px;
     background: linear-gradient(135deg, var(--bg-darker) 0%, var(--bg-dark) 100%);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
 }
 
 .breadcrumb {
@@ -55,125 +73,233 @@
 
 .vision-description {
     max-width: 800px;
+    margin: 0 auto;
     font-size: 1.1rem;
     color: var(--text-gray);
     line-height: 1.8;
 }
 
-/* Overview Section */
-.overview-section {
+/* Problem Section */
+.problem-section {
     background: var(--bg-dark);
 }
 
-.overview-intro {
-    font-size: 1.2rem;
-    color: var(--text-gray);
-    text-align: center;
-    max-width: 900px;
-    margin: 0 auto 3rem;
-    line-height: 1.8;
+.problem-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
-.feature-box {
+.problem-card {
+    background: rgba(255, 107, 53, 0.05);
+    border: 1px solid rgba(255, 107, 53, 0.2);
+    border-radius: 12px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
+.problem-card:hover {
+    border-color: var(--accent-orange);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 40px rgba(255, 107, 53, 0.2);
+}
+
+.problem-card h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--accent-orange);
+    margin-bottom: 1rem;
+}
+
+.problem-card p {
+    color: var(--text-gray);
+    line-height: 1.7;
+}
+
+/* Opportunity Section */
+.opportunity-section {
+    background: var(--bg-darker);
+}
+
+.opportunity-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.opportunity-card {
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     padding: 2rem;
     transition: all 0.3s ease;
+    text-align: center;
 }
 
-.feature-box:hover {
+.opportunity-card:hover {
+    border-color: var(--accent-cyan);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 40px rgba(0, 217, 255, 0.2);
+}
+
+.opportunity-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.opportunity-card h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-light);
+    margin-bottom: 1rem;
+}
+
+.opportunity-card p {
+    color: var(--text-gray);
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+/* Vision Section */
+.vision-section {
+    background: var(--bg-dark);
+}
+
+.vision-intro {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    font-size: 1.2rem;
+    color: var(--text-gray);
+    line-height: 1.8;
+}
+
+.vision-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.vision-item {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
+.vision-item:hover {
     border-color: var(--primary-color);
     transform: translateY(-5px);
     box-shadow: 0 10px 40px rgba(0, 80, 136, 0.3);
 }
 
-.feature-box h3 {
+.vision-number {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-cyan));
+    color: var(--text-light);
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.vision-item h3 {
     font-size: 1.3rem;
     font-weight: 700;
     color: var(--text-light);
     margin-bottom: 1rem;
 }
 
-.feature-box p {
+.vision-item p {
     color: var(--text-gray);
     line-height: 1.7;
 }
 
-.feature-list {
+/* Architecture Layers Section */
+.architecture-layers-section {
+    background: var(--bg-darker);
+}
+
+.layers-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.layer-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 2.5rem;
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
+.layer-card:hover {
+    border-color: var(--accent-cyan);
+    box-shadow: 0 10px 40px rgba(0, 217, 255, 0.2);
+}
+
+.layer-highlight {
+    border-color: var(--accent-cyan);
+    background: rgba(0, 217, 255, 0.05);
+}
+
+.layer-number {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--accent-orange), var(--accent-pink));
+    color: var(--text-light);
+    padding: 0.5rem 1.2rem;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.layer-card h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+}
+
+.layer-subtitle {
+    font-size: 1rem;
+    color: var(--accent-cyan);
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.layer-list {
     list-style: none;
     padding: 0;
 }
 
-.feature-list li {
+.layer-list li {
     color: var(--text-gray);
-    padding: 0.5rem 0;
+    padding: 0.6rem 0;
     padding-left: 1.5rem;
     position: relative;
     line-height: 1.7;
 }
 
-.feature-list li::before {
+.layer-list li::before {
     content: '→';
     position: absolute;
     left: 0;
     color: var(--accent-cyan);
     font-weight: 700;
-}
-
-/* Architecture Section */
-.architecture-section {
-    background: var(--bg-darker);
-}
-
-.architecture-diagram {
-    max-width: 900px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.architecture-layer {
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    padding: 2rem;
-    transition: all 0.3s ease;
-}
-
-.architecture-layer:hover {
-    border-color: var(--accent-cyan);
-    box-shadow: 0 5px 20px rgba(0, 217, 255, 0.2);
-}
-
-.architecture-layer h3 {
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: var(--accent-cyan);
-    margin-bottom: 1rem;
-}
-
-.architecture-layer p {
-    color: var(--text-gray);
-    margin-bottom: 1rem;
-}
-
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 0.75rem;
-}
-
-.services-grid span {
-    background: rgba(0, 80, 136, 0.2);
-    color: var(--text-light);
-    padding: 0.6rem 1rem;
-    border-radius: 6px;
-    font-size: 0.9rem;
-    font-weight: 600;
-    text-align: center;
-    border: 1px solid rgba(0, 80, 136, 0.3);
 }
 
 /* Characteristics Section */
@@ -193,6 +319,7 @@
     border-radius: 12px;
     padding: 2rem;
     transition: all 0.3s ease;
+    text-align: left;
 }
 
 .characteristic-card:hover {
@@ -255,6 +382,7 @@
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     padding: 2rem;
+    text-align: left;
 }
 
 .capability-category h3 {
@@ -308,6 +436,7 @@
     border-radius: 12px;
     padding: 2.5rem;
     transition: all 0.3s ease;
+    text-align: left;
 }
 
 .benefit-card:hover {
@@ -356,11 +485,10 @@
 }
 
 .deployment-intro {
-    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem;
     font-size: 1.1rem;
     color: var(--text-gray);
-    max-width: 700px;
-    margin: 0 auto 3rem;
 }
 
 .deployment-grid {
@@ -375,6 +503,7 @@
     border-radius: 12px;
     padding: 2.5rem;
     transition: all 0.3s ease;
+    text-align: left;
 }
 
 .deployment-card:hover {
@@ -433,10 +562,9 @@
         padding: 100px 0 40px;
     }
 
-    .services-grid {
-        grid-template-columns: 1fr;
-    }
-
+    .problem-grid,
+    .opportunity-grid,
+    .vision-grid,
     .characteristics-grid,
     .capabilities-wrapper,
     .deployment-grid {

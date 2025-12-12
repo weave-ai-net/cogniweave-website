@@ -248,12 +248,8 @@
 
 .layer-card:hover {
     border-color: var(--accent-cyan);
-    box-shadow: 0 10px 40px rgba(0, 217, 255, 0.2);
-}
-
-.layer-highlight {
-    border-color: var(--accent-cyan);
     background: rgba(0, 217, 255, 0.05);
+    box-shadow: 0 10px 40px rgba(0, 217, 255, 0.2);
 }
 
 .layer-number {

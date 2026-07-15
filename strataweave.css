@@ -1,4 +1,4 @@
-/* weavefactor.core Page Specific Styles */
+/* Strataweave Page Specific Styles */
 
 /* Content Centering */
 .content-center {
@@ -42,16 +42,19 @@
 }
 
 .product-title {
+    font-family: var(--font-display);
     font-size: clamp(2.5rem, 5vw, 3.5rem);
     font-weight: 800;
+    letter-spacing: -0.03em;
     color: var(--text-light);
     margin-bottom: 1rem;
 }
 
 .product-subtitle {
-    font-size: 1.5rem;
-    color: var(--accent-orange);
-    margin-bottom: 2rem;
+    font-size: 1.25rem;
+    color: var(--brand-weave);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
 }
 
 .vision-badge {
